@@ -1,0 +1,21 @@
+{
+  "name": "integer-net/solr-magento1-pro",
+  "type": "magento-module",
+  "description": "Solr Module Pro Features for Magento 1",
+  "homepage": "https://github.com/integer-net/solr-magento1-pro",
+  "require": {
+    "aoepeople/aoe_layoutconditions": "dev-master",
+    "integer-net/solr-magento1": "dev-master",
+    "integer-net/solr-pro": "dev-master"
+  },
+  "minimum-stability": "dev",
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@github.com:integer-net/solr-magento1.git"
+    }
+  ],
+  "extra": {
+    "magento-root-dir": ".travis/magento"
+  }
+}
