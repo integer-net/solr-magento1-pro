@@ -107,6 +107,9 @@
                 <integernet_solrpro_tabs>
                     <file>integernet/solr/tabs.xml</file>
                 </integernet_solrpro_tabs>
+                <integernet_solrpro_filter>
+                    <file>integernet/solr/profilter.xml</file>
+                </integernet_solrpro_filter>
             </updates>
         </layout>
     </frontend>
