@@ -2,7 +2,8 @@
 <config>
     <modules>
         <IntegerNet_SolrPro>
-            <version>1.6.0.2</version>
+            <version>1.7.0.0</version>
+            <version_suffix>beta1</version_suffix>
         </IntegerNet_SolrPro>
     </modules>
     <global>
@@ -66,6 +67,16 @@
                 </observers>
             </cms_page_delete_commit_after>
         </events>
+
+        <template>
+            <email>
+                <integernet_solr_connection_check_email_template translate="label" module="integernet_solr">
+                    <label>Solr Connection Check Notification</label>
+                    <file>integernet_solr/connection_check.txt</file>
+                    <type>text</type>
+                </integernet_solr_connection_check_email_template>
+            </email>
+        </template>
     </global>
 
     <frontend>

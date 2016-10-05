@@ -34,9 +34,20 @@ class IntegerNet_SolrPro_Model_Observer
     public function controllerActionPredispatchCatalogCategoryView(Varien_Event_Observer $observer)
     {
         if (Mage::getStoreConfigFlag('integernet_solr/general/is_active')
-            && Mage::getStoreConfigFlag('integernet_solr/category/is_active')
-            && !$this->_getPingResult()) {
-            Mage::app()->getStore()->setConfig('integernet_solr/general/is_active', 0);
+            && Mage::getStoreConfigFlag('integernet_solr/category/is_active')) {
+            if (!class_exists('\IntegerNet\SolrSuggest\Util\Version')) {
+                Mage::throwException(
+                    Mage::helper('integernet_solr')->__(
+                        'The IntegerNet_Solr Pro library is not installed. You can get it from <a href="%s" target="_blank">%s</a>.',
+                        'https://github.com/integer-net/solr-pro',
+                        'https://github.com/integer-net/solr-pro'
+                    )
+                );
+            }
+
+            if (!$this->_getPingResult()) {
+                Mage::app()->getStore()->setConfig('integernet_solr/general/is_active', 0);
+            }
         }
 
         if (!Mage::getStoreConfigFlag('integernet_solr/general/is_active')) {
