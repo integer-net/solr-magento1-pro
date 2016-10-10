@@ -22,7 +22,7 @@
             <integernet_solrpro>
                 <class>IntegerNet_SolrPro_Block</class>
             </integernet_solrpro>
-            
+
             <catalogsearch>
                 <rewrite>
                     <autocomplete>IntegerNet_SolrPro_Block_Autosuggest</autocomplete>
@@ -35,6 +35,15 @@
                 <class>IntegerNet_SolrPro_Helper</class>
             </integernet_solrpro>
         </helpers>
+
+        <resources>
+            <integernet_solr_pro_setup>
+                <setup>
+                    <module>IntegerNet_SolrPro</module>
+                    <class>Mage_Catalog_Model_Resource_Setup</class>
+                </setup>
+            </integernet_solr_pro_setup>
+        </resources>
 
         <events>
             <application_clean_cache>

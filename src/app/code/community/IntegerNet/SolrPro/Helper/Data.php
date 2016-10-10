@@ -20,7 +20,7 @@ class IntegerNet_SolrPro_Helper_Data extends IntegerNet_Solr_Helper_Data
 {
 
     /**
-     * @return IntegerNet_Solr_Helper_Autosuggest
+     * @return IntegerNet_SolrPro_Helper_Autosuggest
      */
     public function autosuggest()
     {
