@@ -30,5 +30,8 @@
             <block type="integernet_solrpro/result_categories" name="catalogsearch.solr.tab.categories" after="*"
                    template="integernet/solr/tabs/categories.phtml"/>
         </reference>
+        <reference name="before_body_end">
+            <block type="integernet_solrpro/js" name="solr.js" template="integernet/solr/js.phtml" />
+        </reference>
     </catalogsearch_result_index>
 </layout>
