@@ -12,6 +12,10 @@
     {
       "type": "vcs",
       "url": "git@github.com:integer-net/solr-magento1.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:integer-net/solr-pro.git"
     }
   ],
   "extra": {
