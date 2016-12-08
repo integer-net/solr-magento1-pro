@@ -42,6 +42,6 @@ build:
           php composer.phar install --dev --no-interaction
           sed -i -e "s/8983/$SOLR_CI_PORT_8983_TCP_PORT/g" src/app/code/community/IntegerNet/SolrPro/Test/fixtures/config.yaml
           sed -i -e "s/localhost/$SOLR_CI_PORT_8983_TCP_ADDR/g" src/app/code/community/IntegerNet/SolrPro/Test/fixtures/config.yaml
-          sed -i -e "s/8983/$SOLR_CI_PORT_8983_TCP_PORT/g" .modman/integer-net_solr-magento1/src/app/code/community/IntegerNet/Solr/Test/fixtures/config.yaml
-          sed -i -e "s/localhost/$SOLR_CI_PORT_8983_TCP_ADDR/g" .modman/integer-net_solr-magento1/src/app/code/community/IntegerNet/Solr/Test/fixtures/config.yaml
+          sed -i -e "s/8983/$SOLR_CI_PORT_8983_TCP_PORT/g" .modman/solr-magento1/src/app/code/community/IntegerNet/Solr/Test/fixtures/config.yaml
+          sed -i -e "s/localhost/$SOLR_CI_PORT_8983_TCP_ADDR/g" .modman/solr-magento1/src/app/code/community/IntegerNet/Solr/Test/fixtures/config.yaml
           curl -sSL https://raw.githubusercontent.com/schmengler/MageTestStand/master/setup.sh | bash
