@@ -20,15 +20,23 @@
   "repositories": [
     {
       "type": "vcs",
+      "url": "git@github.com:schmengler/Aoe_LayoutConditions.git"
+    },
+    {
+      "type": "vcs",
       "url": "git@github.com:integer-net/solr-magento1.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:integer-net/solr-base.git"
     },
     {
       "type": "vcs",
       "url": "git@github.com:integer-net/solr-pro.git"
     },
     {
-      "type": "vcs",
-      "url": "git@github.com:schmengler/Aoe_LayoutConditions.git"
+      "type": "composer",
+      "url": "https://packages.firegento.com"
     }
   ],
   "extra": {
