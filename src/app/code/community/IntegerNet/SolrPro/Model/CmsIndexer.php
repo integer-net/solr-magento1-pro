@@ -21,12 +21,9 @@ class IntegerNet_SolrPro_Model_CmsIndexer
      */
     protected $_pageIndexer;
 
-    /**
-     * Internal constructor not depended on params. Can be used for object initialization
-     */
     public function __construct()
     {
-        $this->_pageIndexer = Mage::helper('integernet_solr')->factory()->getPageIndexer();
+        $this->_pageIndexer = Mage::helper('integernet_solrpro')->factory()->getPageIndexer();
     }
 
     /**

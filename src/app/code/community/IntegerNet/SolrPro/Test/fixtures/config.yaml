@@ -11,8 +11,8 @@ config:
   default/integernet_solr/general/is_active: 1
   default/integernet_solr/general/log: 1
   default/integernet_solr/server/host: localhost
-  default/integernet_solr/server/port: 8080
-  default/integernet_solr/server/path: /solr-4.10/
+  default/integernet_solr/server/port: 8983
+  default/integernet_solr/server/path: /solr/
   default/integernet_solr/server/core: core0
   default/integernet_solr/server/http_method: curl
   default/integernet_solr/server/use_https: 0

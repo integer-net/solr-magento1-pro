@@ -21,7 +21,7 @@ class IntegerNet_SolrPro_Model_Categories_Result
      */
     protected $_solrResult = null;
 
-    function __construct()
+    public function __construct()
     {
         $this->_solrRequest = Mage::helper('integernet_solrpro')->factory()->getSolrRequest(SolrRequestFactory::REQUEST_MODE_CATEGORY_SEARCH);
     }
