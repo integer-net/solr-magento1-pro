@@ -113,6 +113,9 @@
 
         <layout>
             <updates>
+                <integernet_solrpro_autosuggest>
+                    <file>integernet/solr/autosuggest.xml</file>
+                </integernet_solrpro_autosuggest>
                 <integernet_solrpro_tabs>
                     <file>integernet/solr/tabs.xml</file>
                 </integernet_solrpro_tabs>
