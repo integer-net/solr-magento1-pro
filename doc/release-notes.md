@@ -2,7 +2,7 @@ IntegerNet_Solr Pro for Magento 1
 ===============
 Release Notes
 
-Version 1.7.4 (May 16, 2017)
+Version 1.7.5 (May 16, 2017)
 ---------------
 
 - Add slicing functionality (see src/shell/integernet-solr.php)
