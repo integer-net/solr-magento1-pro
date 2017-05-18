@@ -38,6 +38,10 @@
                        as="state_renderers"/>
             </block>
             <block type="core/template" template="integernet/solr/loader.phtml" name="solr.loader" as="solr.loader" after="-"/>
+
+            <reference name="before_body_end">
+                <block type="integernet_solrpro/js" name="solr.js" template="integernet/solr/js.phtml" />
+            </reference>
         </reference>
     </catalog_category_layered>
 </layout>
