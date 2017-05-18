@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+
+    <default>
+        <reference name="head">
+            <action method="addCss" ifconfig="integernet_solr/general/is_active">
+                <stylesheet>integernet/solr/css/autosuggest.css</stylesheet>
+            </action>
+        </reference>
+    </default>
+
+</layout>
