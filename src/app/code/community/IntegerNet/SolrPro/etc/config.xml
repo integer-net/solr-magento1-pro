@@ -2,7 +2,7 @@
 <config>
     <modules>
         <IntegerNet_SolrPro>
-            <version>1.7.6</version>
+            <version>1.7.7</version>
             <version_suffix />
         </IntegerNet_SolrPro>
     </modules>
@@ -258,6 +258,7 @@
                 <show_complete_category_path>1</show_complete_category_path>
                 <category_link_type>direct</category_link_type>
                 <attribute_filter_suggestions>a:0:{}</attribute_filter_suggestions>
+                <show_outofstock>1</show_outofstock>
             </autosuggest>
             <solr_theme>
                 <loader_style>solr-system</loader_style>
