@@ -138,6 +138,7 @@ class IntegerNet_SolrPro_Helper_Factory implements SolrRequestFactory, Autosugge
                 $this->getSolrResource(),
                 $storeId);
         } elseif ($isCategoryPage) {
+            $applicationContext->setCategoryConfig($config->getCategoryConfig());
             $factory = new CategoryRequestFactory(
                 $applicationContext,
                 $this->getSolrResource(),
