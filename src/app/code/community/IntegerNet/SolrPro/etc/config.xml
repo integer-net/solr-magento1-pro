@@ -2,7 +2,7 @@
 <config>
     <modules>
         <IntegerNet_SolrPro>
-            <version>1.7.3</version>
+            <version>1.7.6</version>
             <version_suffix />
         </IntegerNet_SolrPro>
     </modules>
@@ -113,6 +113,9 @@
 
         <layout>
             <updates>
+                <integernet_solrpro_autosuggest>
+                    <file>integernet/solr/autosuggest.xml</file>
+                </integernet_solrpro_autosuggest>
                 <integernet_solrpro_tabs>
                     <file>integernet/solr/tabs.xml</file>
                 </integernet_solrpro_tabs>
