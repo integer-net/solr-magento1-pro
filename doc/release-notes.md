@@ -2,6 +2,8 @@ IntegerNet_Solr Pro for Magento 1
 ===============
 Release Notes
 
+- Correctly disable category and cms result blocks if module is disabled (thanks Thomas Zöger!)
+
 Version 1.7.6 (May 18, 2017)
 ---------------
 
