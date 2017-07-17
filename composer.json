@@ -4,8 +4,8 @@
   "description": "Integer_Net Solr Module Pro Features for Magento 1",
   "homepage": "https://github.com/integer-net/solr-magento1-pro",
   "require": {
-    "integer-net/solr-magento1": "~1.7.0",
-    "integer-net/solr-pro": "~1.1.0"
+    "integer-net/solr-magento1": "dev-solr-priority-for-outofstock-products",
+    "integer-net/solr-pro": "dev-solr-priority-for-outofstock-products"
   },
   "require-dev": {
     "ecomdev/ecomdev_phpunit": "dev-dev",
