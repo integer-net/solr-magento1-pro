@@ -2,6 +2,12 @@ IntegerNet_Solr Pro for Magento 1
 ===============
 Release Notes
 
+Version 1.7.7 (Jul 17, 2017)
+---------------
+
+- Choose if you want to display products which are not on stock via a new configuration setting 
+(seperately for search results, category pages and autosuggest)
+- Configure the score multiplier for products which are not on stock 
 - Correctly disable category and cms result blocks if module is disabled (thanks Thomas Zöger!)
 
 Version 1.7.6 (May 18, 2017)
