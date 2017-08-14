@@ -2,6 +2,11 @@ IntegerNet_Solr Pro for Magento 1
 ===============
 Release Notes
 
+Version 1.7.8 (Aug 14, 2017)
+---------------
+
+- Make the MySQL connection disconnect/reconnect feature configurable (default: off) 
+
 Version 1.7.7 (Jul 17, 2017)
 ---------------
 
