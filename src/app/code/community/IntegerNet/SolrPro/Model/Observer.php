@@ -177,4 +177,56 @@ class IntegerNet_SolrPro_Model_Observer
         return (boolean)$solr->ping();
     }
 
+    /**
+     * Adjust robots tag of page head depending on current page and configuration setting
+     *
+     * @param Varien_Event_Observer $observer
+     */
+    public function coreBlockAbstractToHtmlBefore(Varien_Event_Observer $observer)
+    {
+        $block = $observer->getBlock();
+
+        if ($block instanceof Mage_Page_Block_Html_Head) {
+            $this->_adjustRobots($block);
+        }
+    }
+
+    /**
+     * Set Robots to NOINDEX,NOFOLLOW depending on config
+     *
+     * @param Mage_Page_Block_Html_Head $block
+     */
+    protected function _adjustRobots($block)
+    {
+        /** @var $helper IntegerNet_Solr_Helper_Data */
+        $helper = Mage::helper('integernet_solr');
+        if (!$helper->module()->isActive()) {
+            return;
+        }
+        $stateBlock = null;
+        $robotOptions = explode(',', Mage::getStoreConfig('integernet_solr/seo/hide_from_robots'));
+        if ($helper->page()->isSearchPage()) {
+            if (in_array('search_results_all', $robotOptions)) {
+                $block->setData('robots', 'NOINDEX,NOFOLLOW');
+                return;
+            }
+            if (!in_array('search_results_filtered', $robotOptions)) {
+                return;
+            }
+            /** @var IntegerNet_Solr_Block_Result_Layer_State $stateBlock */
+            $stateBlock = $block->getLayout()->getBlock('catalogsearch.solr.layer.state');
+        } elseif ($helper->page()->isCategoryPage() && $helper->isCategoryDisplayActive()) {
+            if (!in_array('categories_filtered', $robotOptions)) {
+                return;
+            }
+            /** @var IntegerNet_Solr_Block_Result_Layer_State $stateBlock */
+            $stateBlock = $block->getLayout()->getBlock('catalog.solr.layer.state');
+        }
+        if ($stateBlock instanceof IntegerNet_Solr_Block_Result_Layer_State) {
+            $activeFilters = $stateBlock->getActiveFilters();
+            if (is_array($activeFilters) && sizeof($activeFilters)) {
+                $block->setData('robots', 'NOINDEX,NOFOLLOW');
+            }
+        }
+    }
 }
