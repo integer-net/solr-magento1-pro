@@ -1,0 +1,2 @@
+config:
+  default/integernet_solr/seo/hide_from_robots: search_results_filtered,categories_filtered

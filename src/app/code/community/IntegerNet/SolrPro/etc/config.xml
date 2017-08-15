@@ -99,6 +99,16 @@
                     </integernet_solr>
                 </observers>
             </controller_action_predispatch_catalog_category_view>
+
+            <core_block_abstract_to_html_before>
+                <observers>
+                    <integernet_solr>
+                        <type>singleton</type>
+                        <class>integernet_solrpro/observer</class>
+                        <method>coreBlockAbstractToHtmlBefore</method>
+                    </integernet_solr>
+                </observers>
+            </core_block_abstract_to_html_before>
         </events>
 
         <translate>
@@ -264,10 +274,9 @@
             <solr_theme>
                 <loader_style>solr-system</loader_style>
             </solr_theme>
-            <dev>
-                <register_autoloader>1</register_autoloader>
-                <autoloader_basepath>lib/IntegerNet_Solr</autoloader_basepath>
-            </dev>
+            <seo>
+                <hide_from_robots>search_results_all,search_results_filtered,categories_filtered</hide_from_robots>
+            </seo>
         </integernet_solr>
     </default>
 

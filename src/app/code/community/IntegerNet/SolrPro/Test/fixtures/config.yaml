@@ -8,6 +8,7 @@ scope:
       is_active: 1
 config:
   default/dev/template/allow_symlink: 1
+  default/design/head/default_robots: 'INDEX,FOLLOW'
   default/integernet_solr/general/is_active: 1
   default/integernet_solr/general/log: 1
   default/integernet_solr/server/host: localhost

@@ -71,3 +71,8 @@
 "Use HTML from Solr Index","HTML vom Solr-Index verwenden"
 "Advantages: faster search<br />Disadvantages: slower indexing, no user dependant results","Vorteile: schnellere Suche<br />Nachteile: Langsamere Indizierung, keine benutzerabhängigen Suchergebnisse"
 "Show products which are out of stock","Produkte anzeigen, die nicht auf Lager sind"
+"Search Result Page (always)","Suchergebnisseite (immer)"
+"Search Result Page with active Filters","Suchergebnisseite mit gesetzten Filtern"
+"Category Page with active Filters","Kategorieseite mit gesetzten Filtern"
+"Hide the following pages from robots:","Die folgenden Seiten vor Bots schützen:"
+"This will set NOINDEX,NOFOLLOW","Dadurch wird NOINDEX,NOFOLLOW gesetzt"
