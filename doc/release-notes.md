@@ -2,6 +2,12 @@ IntegerNet_Solr Pro for Magento 1
 ===============
 Release Notes
 
+Version 1.7.9 (Aug 16, 2017)
+---------------
+
+- Update documentation
+- Re-add configuration for robots functionality
+ 
 Version 1.7.8 (Aug 14, 2017)
 ---------------
 
