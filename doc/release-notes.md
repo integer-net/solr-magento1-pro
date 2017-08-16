@@ -2,13 +2,24 @@ IntegerNet_Solr Pro for Magento 1
 ===============
 Release Notes
 
+Version 1.7.9 (Aug 16, 2017)
+---------------
+
+- Update documentation
+- Re-add configuration for robots functionality
+ 
+Version 1.7.8 (Aug 14, 2017)
+---------------
+
+- Make the MySQL connection disconnect/reconnect feature configurable (default: off) 
+
 Version 1.7.7 (Jul 17, 2017)
 ---------------
 
-- Choose if you want to display products which are not on stock via a new configuration setting 
-(seperately for search results, category pages and autosuggest)
-- Configure the score multiplier for products which are not on stock 
-- Correctly disable category and cms result blocks if module is disabled (thanks Thomas Zöger!)
+- Choose if you want to display products which are not in stock via a new configuration setting 
+(separately for search results, category pages and autosuggest)
+- Configure the score multiplier for products which are not in stock 
+- Correctly disable category and CMS result blocks if module is disabled (thanks Thomas Zöger!)
 
 Version 1.7.6 (May 18, 2017)
 ---------------
