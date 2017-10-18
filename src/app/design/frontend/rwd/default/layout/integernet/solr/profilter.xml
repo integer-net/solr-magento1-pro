@@ -43,7 +43,8 @@
         </reference>
 
         <reference name="before_body_end">
-            <block type="integernet_solrpro/js" name="solr.js" template="integernet/solr/js.phtml" />
+            <block ifconfig="integernet_solr/category/is_active" type="integernet_solrpro/js" name="solr.js"
+                   template="integernet/solr/js.phtml" />
         </reference>
     </catalog_category_layered>
 </layout>
