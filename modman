@@ -6,6 +6,8 @@ src/app/design/frontend/base/default/template/integernet/solr/*     app/design/f
 src/app/design/frontend/rwd/default/layout/integernet/solr/*        app/design/frontend/rwd/default/layout/integernet/solr/
 src/app/design/frontend/rwd/default/template/integernet/solr/*      app/design/frontend/rwd/default/template/integernet/solr/
 src/app/etc/modules/*                                               app/etc/modules/
+src/app/locale/de_CH/IntegerNet_SolrPro.csv                         app/locale/de_CH/IntegerNet_SolrPro.csv
+src/app/locale/de_CH/template/email/*                               app/locale/de_CH/template/email/
 src/app/locale/de_DE/IntegerNet_SolrPro.csv                         app/locale/de_DE/IntegerNet_SolrPro.csv
 src/app/locale/de_DE/template/email/*                               app/locale/de_DE/template/email/
 src/app/locale/en_US/template/email/*                               app/locale/en_US/template/email/
