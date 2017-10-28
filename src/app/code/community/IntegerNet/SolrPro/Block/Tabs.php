@@ -14,6 +14,10 @@ class IntegerNet_SolrPro_Block_Tabs extends Mage_Core_Block_Template
      */
     public function canShowTabs()
     {
+        if (!Mage::getStoreConfigFlag('integernet_solr/general/is_active')) {
+            return false;
+        }
+
         return $this->getCmsResultCount() + $this->getCategoryResultCount() > 0;
     }
 

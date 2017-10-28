@@ -69,4 +69,16 @@ class IntegerNet_SolrPro_Block_Result_Categories extends Mage_Catalog_Block_Prod
         }
         return '';
     }
+
+    /**
+     * @return string
+     */
+    protected function _toHtml()
+    {
+        if (!Mage::helper('integernet_solr')->module()->isActive()) {
+            return '';
+        }
+
+        return parent::_toHtml();
+    }
 }
