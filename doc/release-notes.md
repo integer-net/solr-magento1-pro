@@ -2,6 +2,11 @@ IntegerNet_Solr Pro for Magento 1
 ===============
 Release Notes
 
+Version 1.7.10 (Oct 11, 2017)
+---------------
+
+- Fix display of category suggestions in case of more than one category with the same name
+
 Version 1.7.9 (Aug 16, 2017)
 ---------------
 

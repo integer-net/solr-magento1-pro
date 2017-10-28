@@ -2,7 +2,7 @@
 <config>
     <modules>
         <IntegerNet_SolrPro>
-            <version>1.7.9</version>
+            <version>1.7.10</version>
             <version_suffix />
         </IntegerNet_SolrPro>
     </modules>
@@ -113,11 +113,11 @@
 
         <translate>
             <modules>
-                <integernet_solrpro>
+                <IntegerNet_SolrPro>
                     <files>
                         <default>IntegerNet_SolrPro.csv</default>
                     </files>
-                </integernet_solrpro>
+                </IntegerNet_SolrPro>
             </modules>
         </translate>
 
@@ -197,11 +197,11 @@
 
         <translate>
             <modules>
-                <integernet_solrpro>
+                <IntegerNet_SolrPro>
                     <files>
                         <default>IntegerNet_SolrPro.csv</default>
                     </files>
-                </integernet_solrpro>
+                </IntegerNet_SolrPro>
             </modules>
         </translate>
     </adminhtml>
