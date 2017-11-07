@@ -37,11 +37,14 @@
                 <block type="integernet_solr/result_layer_renderers" name="catalog.solr.topnav.layer.renderers"
                        as="state_renderers"/>
             </block>
-            <block type="core/template" template="integernet/solr/loader.phtml" name="solr.loader" as="solr.loader" after="-"/>
 
-            <reference name="before_body_end">
-                <block type="integernet_solrpro/js" name="solr.js" template="integernet/solr/js.phtml" />
-            </reference>
+            <block ifconfig="integernet_solr/category/is_active" type="core/template"
+                   template="integernet/solr/loader.phtml" name="solr.loader" as="solr.loader" after="-"/>
+        </reference>
+
+        <reference name="before_body_end">
+            <block ifconfig="integernet_solr/category/is_active" type="integernet_solrpro/js" name="solr.js"
+                   template="integernet/solr/js.phtml" />
         </reference>
     </catalog_category_layered>
 </layout>
