@@ -64,6 +64,34 @@ class IntegerNet_SolrPro_Block_Result_Categories extends Mage_Catalog_Block_Prod
      */
     public function getCategoryImageUrl($document, $width, $height)
     {
+        if(Mage::getStoreConfigFlag('integernet_solr/results/use_category_thumbnail')) {
+            return $this->getThumbnailUrl($document, $width, $height);
+        }
+        return $this->getImageUrl($document, $width, $height);
+    }
+
+    /**
+     * @param Apache_Solr_Document $document
+     * @param int $width
+     * @param int $height
+     * @return string
+     */
+    public function getImageUrl($document, $width, $height)
+    {
+        if (isset($document->image_url_s_nonindex) && ($imageUrl = $document->image_url_s_nonindex)) {
+            return $this->helper('integernet_solrpro/timage')->init($imageUrl)->resize($width, $height);
+        }
+        return '';
+    }
+
+    /**
+     * @param Apache_Solr_Document $document
+     * @param int $width
+     * @param int $height
+     * @return string
+     */
+    public function getThumbnailUrl($document, $width, $height)
+    {
         if (isset($document->image_url_s_nonindex) && ($imageUrl = $document->image_url_s_nonindex)) {
             return $this->helper('integernet_solrpro/timage')->init($imageUrl)->resize($width, $height);
         }
