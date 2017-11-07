@@ -92,7 +92,7 @@ class IntegerNet_SolrPro_Block_Result_Categories extends Mage_Catalog_Block_Prod
      */
     public function getThumbnailUrl($document, $width, $height)
     {
-        if (isset($document->image_url_s_nonindex) && ($imageUrl = $document->image_url_s_nonindex)) {
+        if (isset($document->thumbnail_url_s_nonindex) && ($imageUrl = $document->thumbnail_url_s_nonindex)) {
             return $this->helper('integernet_solrpro/timage')->init($imageUrl)->resize($width, $height);
         }
         return '';
