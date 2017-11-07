@@ -113,11 +113,11 @@
 
         <translate>
             <modules>
-                <integernet_solrpro>
+                <IntegerNet_SolrPro>
                     <files>
                         <default>IntegerNet_SolrPro.csv</default>
                     </files>
-                </integernet_solrpro>
+                </IntegerNet_SolrPro>
             </modules>
         </translate>
 
@@ -197,11 +197,11 @@
 
         <translate>
             <modules>
-                <integernet_solrpro>
+                <IntegerNet_SolrPro>
                     <files>
                         <default>IntegerNet_SolrPro.csv</default>
                     </files>
-                </integernet_solrpro>
+                </IntegerNet_SolrPro>
             </modules>
         </translate>
     </adminhtml>
