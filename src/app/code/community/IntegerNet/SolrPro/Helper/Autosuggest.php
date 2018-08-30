@@ -162,7 +162,7 @@ class IntegerNet_SolrPro_Helper_Autosuggest extends Mage_Core_Helper_Abstract
 
             $categoryPathNames = array();
             foreach($categoryPathIds as $categoryId) {
-                $categoryPathNames[] = Mage::getResourceSingleton('catalog/category')->getAttributeRawValue($categoryId, 'name', Mage::app()->getStore()->getId());
+                $categoryPathNames[] = Mage::getResourceSingleton('catalog/category')->getAttributeRawValue($categoryId, 'name', $category->getStoreId());
             }
             $categoryPathNames[] = $category->getName();
             return implode(' > ', $categoryPathNames);
