@@ -4,7 +4,8 @@
   "description": "Integer_Net Solr Module Pro Features for Magento 1",
   "homepage": "https://github.com/integer-net/solr-magento1-pro",
   "require": {
-    "integer-net/solr-magento1": "^1.7.0",
+    "php": "~5.6.0|~7.0.0|~7.1.0|~7.2.0",
+    "integer-net/solr-magento1": "dev-52/update-dependencies@dev",
     "integer-net/solr-pro": "^1.2.0"
   },
   "require-dev": {
