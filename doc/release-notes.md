@@ -2,6 +2,13 @@ IntegerNet_Solr Pro for Magento 1
 ===============
 Release Notes
 
+Version 1.8.0 (Feb 4, 2019)
+---------------------------
+
+- Improve search results by boosting full word matches
+
+    **Attention: the [new solr schema](https://github.com/integer-net/solr-base/blob/master/conf/schema.xml) has to be configured in Solr!**
+
 Version 1.7.10 (Oct 11, 2017)
 ---------------
 
