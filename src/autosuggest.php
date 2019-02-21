@@ -131,8 +131,8 @@ class Bootstrap
 
     private function initAppConfig()
     {
-        if (\file_exists(__DIR__ . '/autosuggest.config.php')) {
-            $this->config = include __DIR__ . '/autosuggest.config.php';
+        if (\file_exists(getcwd() . '/autosuggest.config.php')) {
+            $this->config = include getcwd() . '/autosuggest.config.php';
             if ($this->config instanceof AppConfig) {
                 return;
             }
