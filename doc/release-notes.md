@@ -2,6 +2,11 @@ IntegerNet_Solr Pro for Magento 1
 ===============
 Release Notes
 
+Version 1.8.1 (Feb 21, 2019)
+---------------------------
+
+- Fix bug: adding a custom autosuggest.conf.php was not possible when using symlinks
+
 Version 1.8.0 (Feb 4, 2019)
 ---------------------------
 
