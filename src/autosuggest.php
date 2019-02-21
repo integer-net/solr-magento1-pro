@@ -137,6 +137,12 @@ class Bootstrap
                 return;
             }
         }
+        if (\file_exists(__DIR__ . '/autosuggest.config.php')) {
+            $this->config = include __DIR__ . '/autosuggest.config.php';
+            if ($this->config instanceof AppConfig) {
+                return;
+            }
+        }
         $this->config = include __DIR__ . '/autosuggest.config.dist.php';
     }
 
